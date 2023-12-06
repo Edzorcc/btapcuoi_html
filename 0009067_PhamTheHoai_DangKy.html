@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        th{
+            text-align: left;
+        }
+        body{
+            background-color: rgb(196, 191, 191);
+        }
+    </style>
+    <title>Tech Registration</title>
+</head>
+<body>
+    <form name="f" method="post" action="0009067_PhamTheHoai_TrangChu.html" onsubmit="return checker()">
+        <table>
+            <h3 style="color: rgb(173, 19, 19);">Technology Discussion Forum Registration</h3>
+            <tr>
+                <th>Registration Information</th>
+                <tr></tr>
+                <td>E-Mail Address:</td>
+                <td><input type="text" name="emailtxt" id="emailtxt"onFocus="changecolor('yellow',this);" onBlur="changecolor('white',this);"
+                    onKeyUp="changecolor('white',this);"><span>*</span></td>
+            </tr>
+            <tr>
+                <td>Display Name:</td>
+                
+                <td><input type="text" name="nametxt" id="nametxt"onFocus="changecolor('yellow',this);" onBlur="changecolor('white',this);"
+                    onKeyUp="changecolor('white',this);"><span>*</span></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="passwordtxt" id="passwordtxt"  onFocus="changecolor('yellow',this);" onBlur="changecolor('white',this);"
+                    onKeyUp="changecolor('white',this);"><span>*</span></td>
+            </tr>
+            <tr>
+                <td>Confirm Password</td>
+                
+                <td><input type="password" name="confirmpasstxt" id="confirmpasstxt"onFocus="changecolor('yellow',this);" onBlur="changecolor('white',this);"
+                    onKeyUp="changecolor('white',this);"><span>*</span></td>
+            </tr>
+            <tr>
+                <th>Profile Information</th>
+                <tr></tr>
+                <td>ICQ Number:</td>
+                <td><input type="text" id="icqnumb" name="icqnumb"onFocus="changecolor('yellow',this);" onBlur="changecolor('white',this);"
+                    onKeyUp="changecolor('white',this);"></td>
+            </tr>
+            <tr>
+                <td>AIM Number:</td>
+                <td><input type="text" id="aimnumb" name="aimnumb"onFocus="changecolor('yellow',this);" onBlur="changecolor('white',this);"
+                    onKeyUp="changecolor('white',this);"></td>
+            </tr>
+            <tr>
+                <td>Website:</td>
+                <td><input type="text" id="website" name="website"onFocus="changecolor('yellow',this);" onBlur="changecolor('white',this);"
+                    onKeyUp="changecolor('white',this);"></td>
+            </tr>
+            <tr>
+                <td>Location:</td>
+                <td><input type="text" id="location" name="location"onFocus="changecolor('yellow',this);" onBlur="changecolor('white',this);"
+                    onKeyUp="changecolor('white',this);"></td>
+            </tr>
+            <tr>
+                <td>Occupation:</t>
+                <td><input type="text" id="occupations" name="occupations"onFocus="changecolor('yellow',this);" onBlur="changecolor('white',this);"
+                    onKeyUp="changecolor('white',this);"></td>
+            </tr>
+            <tr>
+                <th>Preferences</th>
+                <tr></tr>
+                <td>Newsletter:</td>
+                <tr></tr>
+                <td></td>
+                <td><input type="checkbox" id="Newsletters" name="Newsletters">Like to receive a regular Newsletter</td>
+            </tr>
+            <tr>
+                <td>Always notify me of repies:</td>
+                <td><input type="radio" id="yes0" name="yes0">Yes<input type="radio" id="no0" name="yes0">No</td>
+            </tr>
+            <tr>
+                <td>Always attach my signature:</td>
+                <td><input type="radio" id="yes1" name="yes1">Yes<input type="radio" id="no1" name="yes1">No</td>
+            </tr>
+            <tr>
+                <td>Always allow HTML:</td>
+                <td><input type="radio" id="yes2" name="yes2">Yes<input type="radio" id="no2" name="yes2">No</td>
+            </tr>
+            <tr>
+                <td>Board Languages:</td>
+                <td>
+                    <select id="language" name="language">
+                        <option value="1">English</option>
+                        <option value="2">French</option>
+                        <option value="3">China</option>
+                        <option value="-1">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Board Style:</td>
+                <td>
+                    <select id="boardstyles" name="boardstyles">
+                        <option value="bo1">digestTheme</option>
+                        <option value="bo2">lowTheme</option>
+                        <option value="bo3">upTheme</option>
+                        <option value="bo4">standTheme</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Time Zone:</td>
+                <td>
+                    <select id="timezoe" name="timezoe">
+                        <option value="0tim">GMT+0</option>
+                        <option value="1tim">GMT+1</option>
+                        <option value="2tim">GMT+2</option>
+                        <option value="3tim">GMT+3</option>
+                        <option value="4tim">GMT+4</option>
+                        <option value="5tim">GMT+5</option>
+                        <option value="6tim">GMT+6</option>
+                        <option value="7tim">GMT+7</option>
+                        <option value="8tim">GMT+8</option>
+                        <option value="9tim">GMT+9</option>
+                        <option value="10tim">GMT+10</option>
+                        <option value="11tim">GMT+11</option>
+                        <option value="12tim">GMT+12</option>
+                        <option value="13tim">GMT+13</option>
+                        <option value="14tim">GMT+14</option>
+                        <option value="15tim">GMT+15</option>
+                        <option value="16tim">GMT+16</option>
+                        <option value="17tim">GMT+17</option>
+                        <option value="18tim">GMT+18</option>
+                        <option value="19tim">GMT+19</option>
+                        <option value="20tim">GMT+20</option>
+                        <option value="21tim">GMT+21</option>
+                        <option value="22tim">GMT+22</option>
+                        <option value="23tim">GMT+23</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Security Control Panel</th>
+                <td><p>It is important you think before filling this in.You will not be able to change these at will.You will need an <br> admin approval to change them,for security purposes.</p></td>
+            </tr>
+            <tr>
+                <td>Security Question:</td>
+                <td><input type="text" id="securityques" name="securityques" value="My security question"onFocus="changecolor('yellow',this);" onBlur="changecolor('white',this);"
+                    onKeyUp="changecolor('white',this);"></td>
+            </tr>
+            <tr>
+                <td>
+                    Security Answer:
+                </td>
+                <td>
+                    <input type="text" id="securityans" name="securityans" value="answer"onFocus="changecolor('yellow',this);" onBlur="changecolor('white',this);"
+                    onKeyUp="changecolor('white',this);">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <td><button type="submit" id="Submit" name="Submit"onFocus="changecolor('yellow',this);" onBlur="changecolor('white',this);"
+                    onKeyUp="changecolor('white',this);">Submit</td>
+                    <td></button><button type="reset" id="Reset" name="Reset"onFocus="changecolor('yellow',this);" onBlur="changecolor('white',this);"
+						onKeyUp="changecolor('white',this);">Reset</button</td>
+                    </td>
+            </tr>
+            <script>
+                        function changecolor(color, id) {
+			                id.style.backgroundColor = color;
+                        }
+                        function checker(){
+                            if(f.emailtxt.value==""){
+                                alert("Input Your E-Mail Address!")
+                                f.emailtxt.focus();
+                                return false;
+                            }
+                            if(f.nametxt.value==""){
+                                alert("Input Your Display Name!")
+                                f.nametxt.focus()
+                                return false;
+                            }
+
+                            if(f.passwordtxt.value==""){
+                                alert("Input Your Password!")
+                                f.passwordtxt.focus();
+                                return false;
+                            }
+
+                            if(f.confirmpasstxt.value==""){
+                                alert("Input Your ConfirmPassword!")
+                                f.confirmpasstxt.focus();
+                                return false;
+                            }
+                            r = /^\w+\@\w+(\.\w{2,3})+/
+                            if (r.test(f.emailtxt.value) == false) {
+                                alert("Please enter email in correct format!");
+                                    f.emailtxt.focus();
+                                                return false;
+                            }
+                                    var displayName = f.nametxt.value;
+                                        var regEx = /^[a-zA-Z0-9]+$/;
+                                            if (!regEx.test(displayName)) {
+                                                alert("Display Name must contain only letters and numbers!");
+                                                    f.nametxt.focus();
+                                                    return false;
+                                                }
+                                            if (f.confirmpasstxt.value != f.passwordtxt.value) {
+                                                alert("Confirm Password does not match Password!");
+                                                    f.confirmpasstxt.focus();
+                                                    return false;
+                                                }
+                                    var password = f.passwordtxt.value;
+                                        var passRegEx = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
+                                            if (!passRegEx.test(password)) {
+                                                alert("Password must contain at least one letter, one number, and one special character!");
+                                                    f.passwordtxt.focus();
+                                                    return false;
+                                            }
+                                    var icqNumber = f.icqnumb.value;
+                                            if (icqNumber != "" && (isNaN(icqNumber) || icqNumber.length < 6 || icqNumber.length > 12)) {
+                                                alert("ICQ Number must be a number with 6 to 12 digits!");
+                                                    f.icqnumb.focus();
+                                                    return false;
+                                                }
+                                    var masinhvien = 60;
+                                        var allowedYes = masinhvien* 4 % 80;
+                                            if (document.querySelector('input[name="yes0,yes1,yes2"]:checked').value != "yes" + allowedYes) {
+                                                alert("You can only select 'Yes' based on the calculated value!");
+                                                    return false;
+                                                }
+                                    return true;
+                                    }
+                    </script>
+                </table>
+    </form>
+    </body>
+</html>
